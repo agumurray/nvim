@@ -374,6 +374,16 @@ local bold_format = s("bf", {
 })
 table.insert(snippets, bold_format)
 
+local enie = s("nn", {
+    t "ñ", i(1), t ""
+})
+table.insert(snippets, enie)
+
+local enieMayus = s("nnn", {
+    t "Ñ", i(1), t ""
+})
+table.insert(snippets, enieMayus)
+
 local proof_environment = s("proof", fmt([[
 \begin{{proof}}
     {}
